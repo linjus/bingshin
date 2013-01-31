@@ -1,0 +1,30 @@
+﻿<Window x:Class="clrview.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:clrview"
+        xmlns:map="clr-namespace:Map;assembly=control_clr"
+        Title="MainWindow" Height="600" Width="800">
+    <Grid>
+        <TabControl>
+            <TabItem Header="Library">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="200" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="0">
+                        <TextBox Text="Multiple Map is not feasible because of static fields" />
+                        <Button Name="buttonAction1" Content="Action 1" Click="buttonAction1_Click" />
+                        <Button Name="buttonAction2" Content="Action 2" Click="buttonAction2_Click" />
+                        <Button Name="buttonAction3" Content="Action 3" Click="buttonAction3_Click" />
+                        <Button Name="buttonAction4" Content="Action 4" Click="buttonAction4_Click" />
+                        <Button Name="buttonAction5" Content="Action 5" Click="buttonAction5_Click" />
+                    </StackPanel>
+                    <GridSplitter Grid.Column="1" Width="2" ResizeDirection="Columns" HorizontalAlignment="Center" VerticalAlignment="Stretch" />
+                    <local:WPFMapControl Grid.Column="2" x:Name="mapMain" />
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

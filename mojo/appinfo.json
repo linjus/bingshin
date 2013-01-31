@@ -1,0 +1,11 @@
+{
+	"id": "com.codeplex.bingshin",
+	"version": "1.0.0",
+	"vendor": "Choonghwan Lee",
+	"type": "web",
+	"main": "index.html",
+	"title": "Bingshin",
+	"icon": "icon.png",
+	"splashicon": "icon-256x256.png",
+	"plug-ins": true
+}
